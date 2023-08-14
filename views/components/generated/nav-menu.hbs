@@ -1,0 +1,20 @@
+<nav class="flex items-center justify-center py-8" x-data="{ open: true }">
+  <ul x-show="open">
+    <li>
+      <a class="mr-5 hover:bg-gray-200" hx-get="/home">Home</a>
+    </li>
+    <li>
+      <a class="mr-5 hover:bg-gray-200" hx-get="/about" title="Learn about me">About</a>
+    </li>
+    <li>
+      <a class="hover:bg-gray-200" hx-get="/contact" title="Get in touch">Contact</a>
+    </li>
+  </ul>
+  <div class="md:hidden">
+    <button x-on:click="open = !open" class="flex items-center justify-center p-2 border border-gray-400 rounded-md">
+      <svg class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+</nav>

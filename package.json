@@ -1,0 +1,27 @@
+{
+  "name": "htmx-generator",
+  "version": "1.0.0",
+  "description": "htmx frontend on express js server that generates view templates using open ai",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js --out-file build/index.js",
+    "dev": "nodemon --exec babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "nodemon": "^3.0.1",
+    "openai": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/node": "^7.22.6"
+  }
+}
